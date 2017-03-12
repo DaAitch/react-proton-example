@@ -35,6 +35,9 @@ class App extends React.Component {
                 }}>react-proton</h1>
             </header>
             <div style={this.infoStyle}>
+                Please resize this window to see how the Electrons move around.
+            </div>
+            <div style={this.infoStyle}>
                 current proton: <strong>{this.props.proton.protonName}, {this.props.protonFactor}</strong>
             </div>
             <div>
