@@ -9,12 +9,6 @@ body {
   color: #222;
 }
 
-header {
-  padding: 20px;
-  background-color: #ff4022;
-  color: white;
-}
-
 * {
   transition: padding 1000ms, width 1000ms;
 }

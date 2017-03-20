@@ -9,14 +9,6 @@ import App from './App';
 
 import { ProtonProvider, Proton } from 'react-proton';
 
-
-const resizeObservable = observer => () => {
-    const handleResize = event => observer(window.innerWidth);
-    observer(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-};
-
 const proton = new Proton();
 const updateSize = () => proton.setSize(window.innerWidth)
 window.addEventListener('resize', updateSize);
